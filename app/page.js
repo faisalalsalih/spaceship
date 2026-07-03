@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import Hero from '@/sections/Hero'
 
 
 const Page = () => {
@@ -7,6 +8,7 @@ const Page = () => {
     <>
     <div className="bg-primary-black text-white overflow-hidden">
       <Navbar />
+      <Hero />
     </div>
     </>
   )
