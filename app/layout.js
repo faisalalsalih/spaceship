@@ -1,10 +1,6 @@
 import '../styles/globals.css'
-import { Eudoxus_Sans } from 'next/font/google'
 
-const eudoxus = Eudoxus_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '700']
-});
+
 
 export const metadata = {
   title: 'Spacehip',
@@ -14,7 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={eudoxus.className}>{children}</body>
+      <head>
+        <link rel="preconnect" href="https://stijndv.com" />
+        <link rel="stylesheet" href="https://stijndv.com/fonts/Eudoxus-Sans.css" />
+      </head>
+      <body>{children}</body>
     </html>
   )
 }
